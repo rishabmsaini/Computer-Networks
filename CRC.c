@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-	int i,f[20],n[50],div[50],j,temp,quotient[20],len1,len2,ncpy[50];
+	int i,f[20],n[50],div[50],j,temp,q[20],len1,len2,ncpy[50];
 	clrscr();
 
 	printf("Enter the number of data bits: ");
@@ -42,15 +42,15 @@ void main()
 				}
 				temp=temp+1;
 			}
-			quotient[i]=1;
+			q[i]=1;
 		}
 		else
-			quotient[i]=0;
+			q[i]=0;
 	}
 
-	printf("\nThe quotient is:\n");
-	for(i=0;i<len1;i++)
-		printf("%d",quotient[i]);
+	printf("The quotient is:\n");
+	for(i=1;i<len1;i++)
+		printf("%d",q[i]);
 
 	printf("\nAnd the remainder is:\n");
 	for(j=1;j<len2;j++)
